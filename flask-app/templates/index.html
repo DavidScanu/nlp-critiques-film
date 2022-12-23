@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container-inner">
+
+        <h1 class="comments-page-title">{% block title %}Analyse de commentaire{% endblock %}</h1>
+        
+        <h4>Votre commentaire est-il positif ou négatif ?</h4>
+
+        <div class="container-form">
+            <form action="" method="post">
+
+                <label for="comment-user">Ecrivez votre commentaire :</label>
+                <textarea id="comment-user" name="comment-user" rows="5" cols="33" minlength="10" maxlength="5000" required></textarea>
+                <button type="submit" class="btn btn-primary" value=="">Analyser</button>
+            </form>
+        </div>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-success" role="alert">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <div class="container-prediction">
+            <div class="alert alert-success" role="alert">
+                <p><span class="material-symbols-outlined">thumb_up</span>Ce commentaire est positif !</p>
+            </div>
+
+            <div class="alert alert-danger" role="alert">
+                <p><span class="material-symbols-outlined">thumb_down</span>Ce commentaire est négatif !</p>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
