@@ -25,15 +25,20 @@
             {% endif %}
         {% endwith %}
 
-        <div class="container-prediction">
-            <div class="alert alert-success" role="alert">
-                <p><span class="material-symbols-outlined">thumb_up</span>Ce commentaire est positif !</p>
-            </div>
+        <p>{{ prediction }}</p>
 
-            <div class="alert alert-danger" role="alert">
-                <p><span class="material-symbols-outlined">thumb_down</span>Ce commentaire est négatif !</p>
-            </div>
+        <div class="container-prediction">
+            {% if prediction == 1 %}
+                <div class="alert alert-success" role="alert">
+                    <p><span class="material-symbols-outlined">thumb_up</span>Ce commentaire est positif !</p>
+                </div>
+            {% elif prediction == 0 %}
+                <div class="alert alert-danger" role="alert">
+                    <p><span class="material-symbols-outlined">thumb_down</span>Ce commentaire est négatif !</p>
+                </div>
+            {% endif %}
         </div>
+
     </div>
 
 
