@@ -8,9 +8,9 @@ Dans ce brief, il est question d'analyser le sentiment à travers des critiques 
 
 Amélioration des performances :
 
-- **Option 1**: voir si en enlevant des commentaires des mots qui ressortent le plus dans le nuages de mots des données d'apprentissage (quelque soit le target) 
-- **Option 2**: Générer des commentaires plus cours. s'aider du nuage de mots (avis positifs, avis négatifs). 
-- **Option 3**: tester sur plusieurs modèles de classification
+- **Data/Text augmentation**
+- **Option 1**: voir si en enlevant des commentaires des mots qui ressortent le plus dans le nuages de mots des données d'apprentissage (quelque soit la target). Mots en commun entre avis positifs et négatifs. 
+- **Option 2**: Générer des **commentaires cours**. s'aider du nuage de mots (avis positifs, avis négatifs).
 
 ---
 

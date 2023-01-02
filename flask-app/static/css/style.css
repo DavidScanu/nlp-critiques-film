@@ -65,8 +65,16 @@
 }
 
 .comments-page-title {
-    margin: 0 0 30px 0;
+    margin: 0 0 .25em;
     text-align: center;
+}
+
+.comments-page-subtitle {
+    color: gray;
+    font-size: .875em;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 3em;
 }
 
 /*  Form  */

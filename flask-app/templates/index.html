@@ -4,28 +4,18 @@
 
     <div class="container-inner">
 
-        <h1 class="comments-page-title">{% block title %}Analyse de commentaire{% endblock %}</h1>
+        <h1 class="comments-page-title">{% block title %}Analyse de commentaires{% endblock %}</h1>
+        <p class="comments-page-subtitle">par Ramata Soraya Dussart et David Scanu</p>
         
         <h4>Votre commentaire est-il positif ou négatif ?</h4>
 
         <div class="container-form">
             <form action="" method="post">
-
                 <label for="comment-user">Ecrivez votre commentaire :</label>
-                <textarea id="comment-user" name="comment-user" rows="5" cols="33" minlength="10" maxlength="5000" required></textarea>
+                <textarea id="comment-user" name="comment-user" rows="5" cols="33" minlength="10" maxlength="5000" required>{{ comment_user }}</textarea>
                 <button type="submit" class="btn btn-primary" value=="">Analyser</button>
             </form>
         </div>
-
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-                    <div class="alert alert-success" role="alert">{{ message }}</div>
-                {% endfor %}
-            {% endif %}
-        {% endwith %}
-
-        <p>{{ prediction }}</p>
 
         <div class="container-prediction">
             {% if prediction == 1 %}

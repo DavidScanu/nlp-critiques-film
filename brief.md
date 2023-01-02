@@ -20,7 +20,7 @@ En règle générale, le nombre d'avis sur un film peut être important et par c
 
 Dans ce contexte, l’idée du projet est d’utiliser des algorithmes d'apprentissage automatique pour la tâche d'analyse de sentiment des spectateurs via leur critique.
 
-Tout d’abord, il sera question que récupérer les données directement du site d’Allociné. En d’autres termes, nous allons scraper les pages qui nous intéressent sur ce site à savoir les critiques des personnes pour le film **Inception** et **Sonic 2**.
+Tout d’abord, il sera question que récupérer les données directement du site d’**Allociné**. En d’autres termes, nous allons scraper les pages qui nous intéressent sur ce site à savoir les critiques des personnes pour le film **Inception** et **Sonic 2**.
 
 En navigant sur la page des critiques, vous vous apercevrez que seules deux types d’information ici nous intéresse :
 

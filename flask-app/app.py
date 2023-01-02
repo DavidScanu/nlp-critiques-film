@@ -24,21 +24,19 @@ def predict_comment(comment):
 	pred_int = pred[0].astype(int).item()
 	return pred_int
 
-Flask
+# Flask
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
-
 
 if __name__=='__main__':
    app.run()
 
-
 @app.route("/", methods=['GET', 'POST'])
-def index(prediction=None):
-
+def index():
 	if request.method == "POST":
 		comment_user = request.form.get("comment-user")
 		prediction = predict_comment(comment_user)
-		return redirect(url_for('index', prediction=prediction))
+		# return redirect(url_for('index', prediction=prediction))
+		return render_template('index.html', prediction=prediction, comment_user=comment_user)
 	else:
 		return render_template('index.html')
