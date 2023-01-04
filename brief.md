@@ -6,14 +6,6 @@ Dans ce brief, il est question d'analyser le sentiment à travers des critiques 
 
 ---
 
-Amélioration des performances :
-
-- **Option 1**: voir si en enlevant des commentaires des mots qui ressortent le plus dans le nuages de mots des données d'apprentissage (quelque soit le target) 
-- **Option 2**: Générer des commentaires plus cours. s'aider du nuage de mots (avis positifs, avis négatifs). 
-- **Option 3**: tester sur plusieurs modèles de classification
-
----
-
 ## Contexte du projet
 
 En règle générale, le nombre d'avis sur un film peut être important et par conséquent le temps de lecture de chaque commentaire peut être une tâche lourde. Alors comment déterminer de manière rapide si un film a eu du succès auprès des spectateurs (ou pas) ? 
