@@ -23,6 +23,7 @@ Dans ce brief, il est question d'analyser le sentiment à travers des critiques 
 - Sélection et entrainement du modèle
 - Analyse des résultats
 - Export du modèle
+- Application Flask
 
 ---
 
